@@ -27,15 +27,9 @@ act -P macos-latest=-self-hosted
 These default images do **not** contain **all** the tools that GitHub Actions offers by default in their runners.
 Many things can work improperly or not at all while running those image.
 Additionally, some software might still not work even if installed properly, since GitHub Actions are running in fully virtualized machines while `act` is using Docker containers (e.g. Docker does not support running `systemd`).
-In case of any problems [please create issue](https://github.com/nektos/act/issues/new/choose) in respective repository (issues with `act` in this repository, issues with `nektos/act-environments-ubuntu:18.04` in [`nektos/act-environments`](https://github.com/nektos/act-environments) and issues with any image from user `catthehacker` in [`catthehacker/docker_images`](https://github.com/catthehacker/docker_images))
+In case of any problems [please create issue](https://github.com/actions-oss/act-cli/issues/new/choose) in respective repository and issues with any image from user `catthehacker` in [`catthehacker/docker_images`](https://github.com/catthehacker/docker_images))
 
 ## Alternative runner images
-
-If you need an environment that works just like the corresponding GitHub runner then consider using an image provided by [nektos/act-environments](https://github.com/nektos/act-environments):
-
-- [`nektos/act-environments-ubuntu:18.04`](https://hub.docker.com/r/nektos/act-environments-ubuntu/tags) - built from the Packer file GitHub uses in [actions/virtual-environments](https://github.com/actions/runner).
-
-:warning: :elephant: `*** WARNING - this image is >18GB 😱***`
 
 - [`catthehacker/ubuntu:full-*`](https://github.com/catthehacker/docker_images/pkgs/container/ubuntu) - filesystem dump of the Runners provided by GitHub, see [`ChristopherHX/runner-image-blobs`](https://github.com/ChristopherHX/runner-image-blobs) or [`catthehacker/docker_images`](https://github.com/catthehacker/docker_images) for more information
 

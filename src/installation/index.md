@@ -28,27 +28,27 @@ curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/nektos/ac
 
 ### Manual download of prebuilt executable
 
-Prebuilt executables for multiple platforms are available via [latest release](https://github.com/nektos/act/releases/latest) page.
+Prebuilt executables for multiple platforms are available via [latest release](https://github.com/actions-oss/act-cli/releases/latest) page.
 You can unpack and run them in terminal specifying full path or add them to one of the paths included in `PATH` environment variable.
 
-- [macOS 64-bit (Apple Silicon)](https://github.com/nektos/act/releases/latest/download/act_Darwin_arm64.tar.gz)
-- [macOS 64-bit (Intel)](https://github.com/nektos/act/releases/latest/download/act_Darwin_x86_64.tar.gz)
-- [Linux 64-bit (arm64/aarch64)](https://github.com/nektos/act/releases/latest/download/act_Linux_arm64.tar.gz)
-- [Linux 32-bit (armv6)](https://github.com/nektos/act/releases/latest/download/act_Linux_armv6.tar.gz)
-- [Linux 32-bit (armv7)](https://github.com/nektos/act/releases/latest/download/act_Linux_armv7.tar.gz)
-- [Linux 32-bit (i386/x86)](https://github.com/nektos/act/releases/latest/download/act_Linux_i386.tar.gz)
-- [Linux 64-bit (amd64/x86_64)](https://github.com/nektos/act/releases/latest/download/act_Linux_x86_64.tar.gz)
-- [Windows 64-bit (arm64/aarch64)](https://github.com/nektos/act/releases/latest/download/act_Windows_arm64.zip)
-- [Windows 32-bit (armv7)](https://github.com/nektos/act/releases/latest/download/act_Windows_armv7.zip)
-- [Windows 32-bit (i386/x86)](https://github.com/nektos/act/releases/latest/download/act_Windows_i386.zip)
-- [Windows 64-bit (amd64/x86_64)](https://github.com/nektos/act/releases/latest/download/act_Windows_x86_64.zip)
+- [macOS 64-bit (Apple Silicon)](https://github.com/actions-oss/act-cli/releases/latest/download/act_Darwin_arm64.tar.gz)
+- [macOS 64-bit (Intel)](https://github.com/actions-oss/act-cli/releases/latest/download/act_Darwin_x86_64.tar.gz)
+- [Linux 64-bit (arm64/aarch64)](https://github.com/actions-oss/act-cli/releases/latest/download/act_Linux_arm64.tar.gz)
+- [Linux 32-bit (armv6)](https://github.com/actions-oss/act-cli/releases/latest/download/act_Linux_armv6.tar.gz)
+- [Linux 32-bit (armv7)](https://github.com/actions-oss/act-cli/releases/latest/download/act_Linux_armv7.tar.gz)
+- [Linux 32-bit (i386/x86)](https://github.com/actions-oss/act-cli/releases/latest/download/act_Linux_i386.tar.gz)
+- [Linux 64-bit (amd64/x86_64)](https://github.com/actions-oss/act-cli/releases/latest/download/act_Linux_x86_64.tar.gz)
+- [Windows 64-bit (arm64/aarch64)](https://github.com/actions-oss/act-cli/releases/latest/download/act_Windows_arm64.zip)
+- [Windows 32-bit (armv7)](https://github.com/actions-oss/act-cli/releases/latest/download/act_Windows_armv7.zip)
+- [Windows 32-bit (i386/x86)](https://github.com/actions-oss/act-cli/releases/latest/download/act_Windows_i386.zip)
+- [Windows 64-bit (amd64/x86_64)](https://github.com/actions-oss/act-cli/releases/latest/download/act_Windows_x86_64.zip)
 
 ### Build from source
 
-Requires Go toolchain 1.18+
+Requires Go toolchain 1.23+
 
 ```shell
-git clone https://github.com/nektos/act.git
+git clone https://github.com/actions-oss/act-cli.git
 cd act/
 make build
 # OR
@@ -59,16 +59,4 @@ go build -ldflags "-X main.version=$(git describe --tags --dirty --always | sed 
 
 `act` is available in below package repositories
 
-- [Arch](./arch.md) (`Linux`)
-- [Homebrew](./homebrew.md) (`Linux`, `macOS`)
-- [Chocolatey](./chocolatey.md) (`Windows`)
-- [COPR](./copr.md) (`Linux`)
 - [GitHub CLI](./gh.md) (`Linux`, `macOS`, `Windows`, `FreeBSD`)
-- [Nix/NixOS](./nix.md) (`Linux`, `macOS`)
-- [MacPorts](./macports.md) (`macOS`)
-- [Scoop](./scoop.md) (`Windows`)
-- [Winget](./winget.md) (`Windows`)
-
-### Packaging status
-
-[![Packaging status](https://repology.org/badge/vertical-allrepos/act-run-github-actions.svg)](https://repology.org/project/act-run-github-actions/versions)
