@@ -16,16 +16,6 @@ Please see [#303](https://github.com/nektos/act/issues/303) for updates.
 
 ## Pre-built artifacts
 
-### Bash script
-
-You can easily install a pre-built `act` executable on any system with `bash` via below commandline
-
-```shell
-curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
-```
-
-⚠ *Script can't install non-released versions* ⚠
-
 ### Manual download of prebuilt executable
 
 Prebuilt executables for multiple platforms are available via [latest release](https://github.com/actions-oss/act-cli/releases/latest) page.
