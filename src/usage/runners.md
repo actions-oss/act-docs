@@ -56,11 +56,9 @@ act -P ubuntu-18.04=nektos/act-environments-ubuntu:18.04 -P ubuntu-latest=ubuntu
 
 ### Using local runner images
 
-The `--pull` flag is set to true by default due to a breaking on older default docker images. This would pull the docker image everytime act is executed.
-
-Set `--pull` to false if a local docker image is needed
+Use `--pull-if-needed` for using local docker images.
 ```sh
-  act --pull=false
+  act --pull-if-needed
 ```
 
 Alternatively turn on offline mode
